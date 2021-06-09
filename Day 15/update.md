@@ -1,5 +1,4 @@
 
-
 # Clean Code
 * Always use indentation
 * use semicolons
@@ -10,3 +9,5 @@
 * Write Explainatory comments
 * Avoid extremely large functions
 * Comments should tell why the code works
+
+
