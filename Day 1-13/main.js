@@ -34,3 +34,9 @@ console.log(stringForExample.trim().length); //40
 console.log(stringForExample.toLowerCase()); //hey ,whats up . i am learning javascript
 console.log(stringForExample.split(" "));
 
+function showMessage(from,text="no text given"){ //this is a default parameter
+    console.log(from+":"+text);
+}
+showMessage("Ann");
+
+function ask(question,yes,no)
