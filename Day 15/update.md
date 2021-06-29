@@ -17,6 +17,6 @@
 * Understand,plan,Implement
 
 # Errors
-* Three types of errors: Syntax Error,Reference Error, Type Error
+* Three types of errors: Syntax Error,Reference Error, Type Error.
 
 
