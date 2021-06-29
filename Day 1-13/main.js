@@ -63,4 +63,4 @@ if(age<18){
         alert("Greetings!");
     }
 }
-welcome();
+welcome();//
