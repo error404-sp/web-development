@@ -39,4 +39,28 @@ function showMessage(from,text="no text given"){ //this is a default parameter
 }
 showMessage("Ann");
 
-function ask(question,yes,no)
+// function ask(question,yes,no){
+//     if(confirm(question)){
+//         yes();
+//     }
+//     else{
+//         no();
+//     }
+// }
+// ask(
+//     "Do you agree?",
+//     function() { alert("You agreed."); },
+//     function() { alert("You canceled the execution."); }
+//   );
+
+let age = prompt("What is your age?",18);
+if(age<18){
+    function welcome() {
+        alert("Hello!");
+    }
+} else {
+    function welcome() {
+        alert("Greetings!");
+    }
+}
+welcome();
