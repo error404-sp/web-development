@@ -109,4 +109,6 @@ console.log(carNames.slice(0,3)); //All JavaScript objects have a toString() met
 
 //This is always the case when you try to output an array.
 
-
+// forEach() calls a callback function with each element
+//Array.include() returns true if array includes the given element.
+//Array.filter() filters element of array on given condition and returns a new array with filtered array items.
