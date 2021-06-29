@@ -10,4 +10,13 @@
 * Avoid extremely large functions
 * Comments should tell why the code works
 
+# Problem solving
+* Sketch on paper(UI)
+* What input is required
+* Step to get output
+* Understand,plan,Implement
+
+# Errors
+* Three types of errors: Syntax Error,Reference Error, Type Error
+
 
