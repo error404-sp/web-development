@@ -66,4 +66,4 @@ for(let i=0;i<people.length;i++){
 
 }
 admitted.textContent+=admit.toString() +".";
-refused.textContent+=refuse.toString() + ".";
+refused.textContent+=refuse.toString() + "."; //
