@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>query selector</h3>
+    <ul><li>
+        element.querySelector(selector) returns reference to the first match of selector
+    </li>
+<li>
+    element.querySelectorAll(selectors) returns a “nodelist” containing references to all of the matches of the selectors
+</li>
+<li>One solution, if problems arise, is to convert the nodelist into an array. You can do this with Array.from() or the spread operator.</li>
+<li></li>
+</ul>
+<h3>Element creation</h3>
+<ul>
+    <li>document.createElement(tagName, [options]) creates a new element of tag type tagName. [options] in this case means you can add some optional parameters to the function. </li>
+    <li>const div = document.createElement('div');</li>
+    <li>This function does NOT put your new element into the DOM - it simply creates it in memory. This is so that you can manipulate the element (by adding styles, classes, ids, text etc.) before placing it on the page. You can place the element into the DOM with one of the following methods.
+
+    </li>
+    <li>Append Elements<br>
+        parentNode.appendChild(childNode) appends childNode as the last child of parentNode<br>
+        parentNode.insertBefore(newNode, referenceNode) inserts newNode into parentNode before referenceNode</li>
+      <li>Remove Elements<br>
+        parentNode.removeChild(child) removes child from parentNode on the DOM and returns reference to child</li>
+        <li>Altering Elements<br>
+            When you have a reference to an element, you can use that reference to alter the element’s own properties. This allows you to do many useful alterations, like adding/removing and altering attributes, changing classes, adding inline style information and more.</li>
+        <li>const div = document.createElement('div');                     
+            // create a new div referenced in the variable 'div'
+            Adding inline style
+            div.style.color = 'blue';                                      
+            // adds the indicated style rule
+            
+            div.style.cssText = 'color: blue; background: white';          
+            // adds several style rules
+            
+            div.setAttribute('style', 'color: blue; background: white');    
+            // adds several style rules</li>
+
+            <li>Editing Attributes<br>
+            div.setAttribute('id','theDiv')</li>
+            <li>div.getAttribute('id')</li>
+            <li>div.removeAttribute('id')</li>
+
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">all html attributes</a></li>
+            <li>Working with classes<br>
+                div.classList.add('new');                                      
+                // adds class "new" to your new div<br>
+                
+                div.classList.remove('new');                                   
+                // remove "new" class from div<br>
+                
+                div.classList.toggle('active');                                
+                // if div doesn't have class "active" then add it, or if
+                // it does, then remove it</li>
+                <li>Adding text content<br>
+                    div.textContent = 'Hello World!'  <br>                             
+                    // creates a text node containing "Hello World!" and
+                    // inserts it in div
+                    Adding HTML content<br>
+                    div.innerHTML = '<span>Hello World!</span>';                   
+                    // renders the html inside div</li>
+</ul>
+</body>
+</html>
