@@ -25,9 +25,16 @@ divElement.appendChild(p);
 container.appendChild(divElement);
 //
 const btn = document.querySelector("button");
-btn.addEventListener('click',function(e){
-    console.log(e);
+//btn.addEventListener('click',function(e){
+//    console.log(e);
+//});
+//btn.addEventListener('click', function (e) {
+//  console.log(e.target);
+//});
+btn.addEventListener('click', function (e) {
+  e.target.style.background = 'blue';
 });
+
 //The target property sets or returns the value of the target attribute in a base element.
 
 //The target attribute specifies the default target for all hyperlinks and forms in the page
