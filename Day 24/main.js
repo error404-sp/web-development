@@ -23,4 +23,33 @@ p.textContent = "ME TOO!";
 divElement.appendChild(h1);
 divElement.appendChild(p);
 container.appendChild(divElement);
+//
+const btn = document.querySelector("button");
+btn.addEventListener('click',function(e){
+    console.log(e);
+});
+//The target property sets or returns the value of the target attribute in a base element.
+
+//The target attribute specifies the default target for all hyperlinks and forms in the page
+// btn.addEventListener('click', function (e) {
+//   e.target.style.background = 'blue';
+// })
+
+//queryselectorAll
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+    button.addEventListener('click',()=>{
+        alert(button.id);
+    });
+});
+//dblclick 	The event occurs when the user double-clicks on an element
+//scroll 	The event occurs when an element's scrollbar is being scrolled
+//keypress 	The event occurs when the user presses a key
+//keydown 	The event occurs when the user is pressing a key
+//keyup 	The event occurs when the user releases a key 	KeyboardEvent
+
+
+
+
 
