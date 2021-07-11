@@ -12,8 +12,8 @@ translateBtn.addEventListener('click', clickHandler);
 
 function clickHandler(){
     let inputText = textInput.value;
-    fetch(constructUrl(inputText))
+    fetch(constructorUrl(inputText)
     .then(response => response.json())
-    .then(json => {output.innerText = json.contents.translated;})
+    .then(json => {output.innerHTML = json.contents.translated;})
 
 }
